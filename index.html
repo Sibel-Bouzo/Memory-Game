@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <title>Memory Game</title>
 
     <meta
@@ -29,7 +30,6 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
@@ -38,7 +38,7 @@
         <div class="score">Score: <span class="font-bold">0</span></div>
         <div class="tries"><span class="font-bold">0</span> Wrong Tries</div>
       </div>
-      <div class="boxes py-4 pl-9 grid grid-cols-4 gap-2.5">
+      <div class="boxes py-4 px-10 grid grid-cols-4 gap-2.5">
         <div class="box" data-r="a">
           <div class="front face"></div>
           <div class="back face">
@@ -137,20 +137,16 @@
         </div>
       </div>
 
-      <div
-        class="congratulations hidden text-center mt-4 p-4 text-white rounded-lg shadow-md"
-      >
-        <h2 class="text-2xl font-bold">Congratulations! 🏆</h2>
-        <p class="text-lg">
-          You've successfully completed the game. You're a memory champion!
-        </p>
+      <div class="congratulations hidden text-center p-4">
+        <h2 class="text-xl font-semibold">Congratulations! 🏆</h2>
+        <p>You've successfully completed the game. You're a memory champion!</p>
         <button class="retry bg-blue-500 text-white px-4 py-2 rounded mt-4">
           Play Again
         </button>
       </div>
 
       <div class="game-over hidden text-center p-4">
-        <h2 class="text-2xl font-bold">Game Over!</h2>
+        <h2 class="text-xl font-semibold">Game Over!</h2>
         <p>Ready to challenge yourself again?</p>
         <button class="retry bg-blue-500 text-white px-4 py-2 rounded mt-4">
           Retry
