@@ -33,7 +33,7 @@ body {
 }
 .game-container .boxes .box {
   height: 125px;
-  width: 125px;
+  width: 100%;
   cursor: pointer;
   transition: transform 0.2s;
   transform-style: preserve-3d;
